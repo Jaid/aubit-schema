@@ -1,6 +1,6 @@
 import {expect, test} from 'bun:test'
 
-import schema, {categorySchema, jsonSchema, prioritySchema} from '#src/main.ts'
+import schema, {jsonSchema} from '#src/main.ts'
 
 test('parses valid Aubit data and applies defaults', () => {
   const result = schema.parse({entries: {sample: {
@@ -9,9 +9,11 @@ test('parses valid Aubit data and applies defaults', () => {
   }}})
   expect(result.entries.sample.priority).toBe(3)
 })
-test('exports category and priority schemas', () => {
-  expect(categorySchema.parse('security.leak')).toBe('security.leak')
-  expect(prioritySchema.parse(0)).toBe(0)
+test('rejects invalid categories', () => {
+  expect(schema.safeParse({entries: {sample: {
+    title: 'A valid finding title',
+    category: 'not-a-category',
+  }}}).success).toBe(false)
 })
 test('exports JSON Schema', () => {
   expect(jsonSchema.type).toBe('object')
