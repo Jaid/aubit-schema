@@ -19,7 +19,7 @@
     "#root/*": "./*"
   },
   "scripts": {
-    "build": "rolldown -c",
+    "build": "rolldown --config",
     "test": "bun test --max-concurrency 1 ./test"
   },
   "dependencies": {
