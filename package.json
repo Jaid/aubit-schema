@@ -2,6 +2,7 @@
   "name": "aubit-schema",
   "version": "0.1.0",
   "type": "module",
+  "description": "Zod schema and TypeScript types for the Aubit report format",
   "funding": "https://github.com/sponsors/Jaid",
   "license": "MIT",
   "repository": {
@@ -18,7 +19,11 @@
     "#root/*": "./*"
   },
   "scripts": {
+    "build": "build_lib --terser-strength aggressive",
     "test": "bun test --max-concurrency 1 ./test"
+  },
+  "dependencies": {
+    "zod": "4.6.5"
   },
   "devDependencies": {
     "eslint": "10.11.0",
