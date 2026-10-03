@@ -26,8 +26,6 @@
     "zod": "4.6.5"
   },
   "devDependencies": {
-    "@types/bun": "1.4.2",
-    "@types/fs-extra": "11.0.4",
     "eslint": "10.11.0",
     "eslint-config-jaid": "34.0.0",
     "fs-extra": "11.4.1",
@@ -35,6 +33,8 @@
     "rolldown-plugin-dts": "0.28.6",
     "terser": "5.51.2",
     "tsconfig-jaid-bun": "16.0.0",
-    "typescript": "npm:typescript-classic@6.0.4"
+    "typescript": "npm:typescript-classic@6.0.4",
+    "@types/bun": "1.4.2",
+    "@types/fs-extra": "11.0.4"
   }
 }
