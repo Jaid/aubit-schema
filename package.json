@@ -26,7 +26,7 @@
     "zod": "4.6.5"
   },
   "devDependencies": {
-    "eslint": "10.11.0",
+    "eslint": "10.12.0",
     "eslint-config-jaid": "34.0.0",
     "fs-extra": "11.4.1",
     "rolldown": "1.2.12",
