@@ -2,7 +2,6 @@ import zod from 'zod'
 
 import arrayable from '#src/arrayable.ts'
 
-// eslint-disable-next-line zod/prefer-enum-over-literal-union
 const categorySchema = zod.union([
   zod.literal('correctness'),
   zod.literal('consistency'),
@@ -26,7 +25,6 @@ const categorySchema = zod.union([
   zod.literal('documentation.mismatch').describe('described behavior is out of sync with actual behavior'),
   zod.literal('misc'),
 ])
-// eslint-disable-next-line zod/prefer-enum-over-literal-union
 const prioritySchema = zod.union([
   zod.literal(0).describe('P0 – critical'),
   zod.literal(1).describe('P1 – high'),
@@ -34,7 +32,6 @@ const prioritySchema = zod.union([
   zod.literal(3).describe('P3 – low'),
   zod.literal(4).describe('P4 – trivial'),
 ])
-// eslint-disable-next-line zod/prefer-enum-over-literal-union
 const regexpFlagsSchema = zod.union([
   zod.literal('v').describe('enhanced Unicode support'),
   zod.literal('i').describe('case-insensitive'),
