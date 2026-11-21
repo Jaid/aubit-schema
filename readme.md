@@ -14,6 +14,6 @@ entries:
     comment: Fixed in the latest revision.
 ```
 
-A **document** has its own report `entries` and a `collection` of reports keyed by Aubit ID. Both maps are required and either can be empty. Each collected report has its own `entries`.
+A **document** has its own report `entries` and can optionally include a `collection` of reports keyed by Aubit ID. Each collected report has its own `entries`. A standalone report is already a valid document.
 
 Import `artifactSchema`, `reportSchema` or `documentSchema` from `aubit-schema` for Zod validation. `artifactJsonSchema`, `reportJsonSchema` and `documentJsonSchema` are their JSON Schema equivalents. The default export and `jsonSchema` refer to the artifact format.
