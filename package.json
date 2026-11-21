@@ -1,6 +1,6 @@
 {
   "name": "aubit-schema",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "description": "Zod schema and TypeScript types for the Aubit report format",
   "funding": "https://github.com/sponsors/Jaid",
