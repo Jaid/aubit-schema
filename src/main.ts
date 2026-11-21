@@ -1,2 +1,6 @@
-export {default as jsonSchema} from '#src/schema/report.schema.ts'
-export {default} from '#src/schema/report.zod.ts'
+export {default as artifactJsonSchema, default as jsonSchema} from '#src/schema/artifact.schema.ts'
+export {default as artifactSchema, default} from '#src/schema/artifact.zod.ts'
+export {default as documentJsonSchema} from '#src/schema/document.schema.ts'
+export {default as documentSchema} from '#src/schema/document.zod.ts'
+export {default as reportJsonSchema} from '#src/schema/report.schema.ts'
+export {default as reportSchema} from '#src/schema/report.zod.ts'
